@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+
+<title>
+Empathia - Emotional Support Chatbot
+</title>
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+rel="stylesheet">
+
+
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div id="chatbot-container">
+
+
+
+<img class="logo"
+
+src="{{ url_for('static', filename='icon.png') }}"
+
+alt="Empathia Logo">
+
+
+
+
+
+<h1>
+Empathia
+</h1>
+
+
+
+
+<div class="quote">
+
+"Your feelings are valid, and you're not alone."
+
+</div>
+
+
+
+
+
+<div id="chat-window"></div>
+
+
+
+
+
+
+<div id="input-container">
+
+
+
+<input
+
+type="text"
+
+id="user-input"
+
+placeholder="How are you feeling today?"
+
+onkeypress="handleKeyPress(event)">
+
+
+
+
+
+<button
+
+id="send-button"
+
+onclick="sendMessage()">
+
+Send
+
+</button>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+
+
+</html>
